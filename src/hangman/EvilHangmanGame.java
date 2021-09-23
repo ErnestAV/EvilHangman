@@ -10,9 +10,10 @@ public class EvilHangmanGame implements IEvilHangmanGame {
     String myPattern;
     int myWordLength;
 
-    TreeSet<String> myWordsToGuess = new TreeSet<String>();
-    SortedSet<String> lettersGuessed = new TreeSet<String>();
-    Map<String, Set<String>> myWordMap = new TreeMap<String, Set<String>>();
+    private TreeSet<String> myWordsToGuess = new TreeSet<String>();
+    private TreeSet<String> lettersGuessed = new TreeSet<String>();
+    private TreeSet<String> evilWords = new TreeSet<String>();
+
 
     @Override
     public void startGame(File dictionary, int wordLength) throws IOException, EmptyDictionaryException {
@@ -31,6 +32,7 @@ public class EvilHangmanGame implements IEvilHangmanGame {
             }
         } catch (FileNotFoundException fileNotFound) {
             fileNotFound.printStackTrace();
+            return;
         }
 
         if (newScanner != null) {
@@ -41,17 +43,8 @@ public class EvilHangmanGame implements IEvilHangmanGame {
     @Override
     public Set<String> makeGuess(char guess) throws GuessAlreadyMadeException {
         String newGuess = Character.toString(guess);
-        boolean guessAlreadyMade = false;
-        boolean endOfGuess = false;
 
-        while (guessAlreadyMade || endOfGuess) {
-            if (lettersGuessed.contains(newGuess)) {
-                guessAlreadyMade = true;
-            }
-            lettersGuessed.add(newGuess);
-            //build map
-            
-        }
+
 
         return null;
     }
@@ -61,7 +54,7 @@ public class EvilHangmanGame implements IEvilHangmanGame {
         return null;
     }
 
-    public String noGuessPrint() {
+    public String noGuessFirstPrint() {
         StringBuilder dashes = new StringBuilder();
 
         for (int i = 0; i < myWordLength; i++) {
