@@ -1,0 +1,4 @@
+package hangman;
+
+class GuessAlreadyMadeException extends Exception {
+}
