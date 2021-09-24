@@ -8,13 +8,17 @@ import java.util.*;
 
 public class EvilHangmanGame implements IEvilHangmanGame {
 
-    String myPattern;
+    //String myPattern;
     int myWordLength;
 
     private TreeSet<String> myWords = new TreeSet<>();
 
     private SortedSet<Character> lettersGuessed = new TreeSet<>();
     private Set<String> myEvilSetOfWords = new HashSet<>();
+
+    private String globalWord = new String();
+
+    private int numberOfGuesses = 0;
 
 
     @Override
@@ -40,6 +44,8 @@ public class EvilHangmanGame implements IEvilHangmanGame {
         if (myWords.isEmpty()) {
             throw new EmptyDictionaryException();
         }
+
+        noGuessFirstPrint();
 
         myEvilSetOfWords.addAll(myWords);
     }
@@ -96,6 +102,7 @@ public class EvilHangmanGame implements IEvilHangmanGame {
                     allPossibleWords = guessedWords.get(biggestKey);
                 }
                 else if (maxDashes == numberOfDashes) {
+                    //right-most algorithm
 
                     for (int i = 0; i < biggestKey.length(); i++) {
                         if (biggestKey.charAt(i) != key.charAt(i)) {
@@ -109,13 +116,20 @@ public class EvilHangmanGame implements IEvilHangmanGame {
                             break;
                         }
                     }
-                    /**
-                    if (max < value) {
-                        allPossibleWords = guessedWords.get(key);
-                    } **/
                 }
             }
         }
+
+        if (maxDashes == myWordLength) {
+            System.out.println("Sorry, the letter " + guess + " is not in the word.");
+            numberOfGuesses--;
+        } else if (maxDashes == myWordLength - 1) {
+            System.out.println("Yes, there is 1 " + guess + " in the word!");
+        } else {
+            System.out.println("Yes, there are " + (myWordLength - maxDashes) + " " + guess + "'s in the word!!");
+        }
+
+        globalWord = buildWord(biggestKey, guess);
 
         //call evilWords and make it equal to PossibleWords
         myEvilSetOfWords = allPossibleWords;
@@ -137,6 +151,8 @@ public class EvilHangmanGame implements IEvilHangmanGame {
             dashes.append('-');
         }
 
+        globalWord = dashes.toString();
+
         return dashes.toString();
     }
 
@@ -156,5 +172,31 @@ public class EvilHangmanGame implements IEvilHangmanGame {
         }
 
         return j.toString();
+    }
+
+    private String buildWord(String aKey, char userGuess) {
+        StringBuilder myWord = new StringBuilder();
+
+        myWord.append(globalWord);
+
+        for (int i = 0; i < aKey.length(); i++) {
+            if (aKey.charAt(i) == userGuess) {
+                myWord.setCharAt(i, userGuess);
+            }
+        }
+
+        return myWord.toString();
+    }
+
+    public String getBuiltWord() {
+        return globalWord;
+    }
+
+    public void setNumberOfGuesses(int numberGuesses) {
+        this.numberOfGuesses = numberGuesses;
+    }
+
+    public int getNumberOfGuesses() {
+        return this.numberOfGuesses;
     }
 }
