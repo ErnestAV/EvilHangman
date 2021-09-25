@@ -1,0 +1,82 @@
+
+G
+java:S1181"%Catch Exception instead of Throwable.(’ğôãøÿÿÿÿ8Üò¥¡Á/
+G
+java:S11812"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8ìò¥¡Á/
+G
+java:S1181?"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8íò¥¡Á/
+G
+java:S1181Q"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8ïò¥¡Á/
+G
+java:S1181Z"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8ğò¥¡Á/
+G
+java:S1181o"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8÷ò¥¡Á/
+>	java:S108y")Either remove or fill this block of code.(Ÿ‡èú
+H
+java:S1181"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8ÿò¥¡Á/
+H
+java:S1181—"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8‚ó¥¡Á/
+H
+java:S1181 "%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8…ó¥¡Á/
+H
+java:S1181«"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8‡ó¥¡Á/
+H
+java:S1181Å"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8ó¥¡Á/
+H
+java:S1181Î"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8ó¥¡Á/
+H
+java:S1181İ"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8‘ó¥¡Á/
+H
+java:S1181ì"%Catch Exception instead of Throwable.(ÓÌËÉûÿÿÿÿ8–ó¥¡Á/
+H
+java:S1181€"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8Ÿó¥¡Á/
+H
+java:S1181ˆ"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8¡ó¥¡Á/
+H
+java:S1181‘"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8¢ó¥¡Á/
+H
+java:S1181§"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8§ó¥¡Á/
+H
+java:S1181±"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8©ó¥¡Á/
+H
+java:S1181¼"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8ªó¥¡Á/
+H
+java:S1181Ñ"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8­ó¥¡Á/
+H
+java:S1181ä"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8³ó¥¡Á/
+H
+java:S1181ÿ"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8Âó¥¡Á/
+H
+java:S1181”"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8Åó¥¡Á/
+H
+java:S1181«"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8Ùó¥¡Á/
+H
+java:S1181À"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8İó¥¡Á/
+A
+java:S5960 "+Remove this assertion from production code.(¦Ã
+
+java:S1192•"cDefine a constant instead of duplicating this literal "Incorrect contents after 3rd guess" 5 times.(½´¢ªÿÿÿÿÿ
+€
+java:S1192ƒ"dDefine a constant instead of duplicating this literal "Incorrect content after 1st guess." 10 times.(î¾«óúÿÿÿÿ
+n
+java:S1192R"XDefine a constant instead of duplicating this literal "Making a guess threw: " 22 times.(×úÑ€
+
+java:S1192¯"cDefine a constant instead of duplicating this literal "Incorrect contents after 5th guess" 6 times.(•£°Ãûÿÿÿÿ
+€
+java:S1192'"jDefine a constant instead of duplicating this literal "Failed to throw EmptyDictionaryException." 4 times.(…¡—¦
+€
+java:S1192¯"dDefine a constant instead of duplicating this literal "Incorrect contents after 1st guess" 12 times.(ñ¬´Èÿÿÿÿÿ
+v
+java:S1192£"_Define a constant instead of duplicating this literal "Incorrect size after 2nd guess" 4 times.(€ÈÏ±
+€
+java:S1192¤"dDefine a constant instead of duplicating this literal "Incorrect contents after 2nd guess" 11 times.(­¸Àÿÿÿÿÿ
+y
+java:S1192J"^Define a constant instead of duplicating this literal "Start game threw IOException" 12 times.(ë÷±±ûÿÿÿÿ
+Š
+java:S1192L"tDefine a constant instead of duplicating this literal "Dictionary that contains words is counted as empty" 12 times.(ÜüÇ†
+
+java:S1192á"cDefine a constant instead of duplicating this literal "Incorrect contents after 6th guess" 4 times.(ç†çÜıÿÿÿÿ
+t
+java:S1192š"]Define a constant instead of duplicating this literal "Incorrect size after 1 guess" 6 times.(Ä•ÙÖ
+y
+java:S1192›"bDefine a constant instead of duplicating this literal "Incorrect contents after 1 guess" 17 times.(ç¦ØÎ

@@ -54,6 +54,13 @@ public class EvilHangmanGame implements IEvilHangmanGame {
     public Set<String> makeGuess(char guess) throws GuessAlreadyMadeException {
         guess = Character.toLowerCase(guess);
 
+        //Check if guess is not a number
+        if (Character.isDigit(guess)) {
+            System.out.println("Wrong input! Numbers are not accepted.");
+            return myEvilSetOfWords;
+        }
+
+        //Check if guess was already made
         if (lettersGuessed.contains(guess)) {
             throw new GuessAlreadyMadeException();
         } else {
@@ -74,8 +81,7 @@ public class EvilHangmanGame implements IEvilHangmanGame {
 
             if (guessedWords.containsKey(key)) {
                 guessedWords.get(key).add(word);
-            }
-            else {
+            } else {
                 guessedWords.put(key, changingPossibleWords);
             }
 
@@ -94,22 +100,19 @@ public class EvilHangmanGame implements IEvilHangmanGame {
                 maxDashes = numberOfDashes;
                 biggestKey = key;
                 allPossibleWords = guessedWords.get(biggestKey);
-            }
-            else if (guessedWords.get(key).size() == allPossibleWords.size()) {
+            } else if (guessedWords.get(key).size() == allPossibleWords.size()) {
                 if (maxDashes < numberOfDashes) {
                     maxDashes = numberOfDashes;
                     biggestKey = key;
                     allPossibleWords = guessedWords.get(biggestKey);
-                }
-                else if (maxDashes == numberOfDashes) {
+                } else if (maxDashes == numberOfDashes) {
                     //right-most algorithm
 
                     for (int i = 0; i < biggestKey.length(); i++) {
                         if (biggestKey.charAt(i) != key.charAt(i)) {
                             if (biggestKey.charAt(i) == '-') {
                                 allPossibleWords = guessedWords.get(biggestKey);
-                            }
-                            else if (key.charAt(i) == '-') {
+                            } else if (key.charAt(i) == '-') {
                                 allPossibleWords = guessedWords.get(key);
                                 biggestKey = key;
                             }
@@ -133,8 +136,6 @@ public class EvilHangmanGame implements IEvilHangmanGame {
 
         //call evilWords and make it equal to PossibleWords
         myEvilSetOfWords = allPossibleWords;
-
-        //allPossibleWords.clear();
 
         return myEvilSetOfWords;
     }
