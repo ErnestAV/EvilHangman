@@ -1,0 +1,24 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(’—¥Ä
+;
+java:S2129" Remove this "String" constructor(²ñ×“ùÿÿÿÿ
+2
+java:S1116"Remove this empty statement.(ÉÜß¥
+m
+java:S37766"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(¦ üÿÿÿÿ
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(âîğÙ8ò’ö Å/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¸ªïæúÿÿÿÿ8ø’ö Å/
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(Ğ €Ûûÿÿÿÿ8ù’ö Å/
+[	java:S106„"9Replace this use of System.out or System.err by a logger.(Çºııÿÿÿÿ8ú’ö Å/
+a
+java:S1858Ê">"next" returns a string, there's no need to call "toString()".(ä íıÿÿÿÿ8›ºõÁ/
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8‚ßô Å/
+P
+java:S1128".Remove this unused import 'java.security.Key'.(ŞÃ“úÿÿÿÿ8ƒßô Å/
+e
+java:S2259o"HA "NullPointerException" could be thrown; "biggestKey" is nullable here.(±ş®8â”ö Å/
+g
+java:S2259‡"I"NullPointerException" will be thrown when invoking method "buildWord()".(˜ª¬È8á”ö Å/
+g
+java:S2095#"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ÑßÔ°şÿÿÿÿ8éÏäóÃ/

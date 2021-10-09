@@ -41,10 +41,12 @@ public class EvilHangman {
             }
 
             if (evilHangmanGame.getNumberOfGuesses() != 0 && !evilHangmanGame.getBuiltWord().contains("-")) {
+                System.out.println("The word is: " + evilHangmanGame.getAFinalWord() + ".");
                 System.out.println("Congratulations! You won!");
                 break;
             } else if (evilHangmanGame.getNumberOfGuesses() == 0) {
                 System.out.println("\nYou are out of guesses. \nSorry, you lose!");
+                System.out.println("The word is: " + evilHangmanGame.getAFinalWord() + ".");
             }
         }
     }

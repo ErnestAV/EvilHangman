@@ -55,8 +55,8 @@ public class EvilHangmanGame implements IEvilHangmanGame {
         guess = Character.toLowerCase(guess);
 
         //Check if guess is not a number
-        if (Character.isDigit(guess)) {
-            System.out.println("Wrong input! Numbers are not accepted.");
+        if (!(Character.isAlphabetic(guess))) {
+            System.out.println("Wrong input! Numbers and special characters are not accepted.");
             return myEvilSetOfWords;
         }
 
@@ -158,10 +158,7 @@ public class EvilHangmanGame implements IEvilHangmanGame {
     }
 
     public String makeKey(String word, Character guessChar) {
-        StringBuilder w = new StringBuilder();
         StringBuilder j = new StringBuilder();
-
-        w.append(word);
 
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == guessChar) {
@@ -199,5 +196,9 @@ public class EvilHangmanGame implements IEvilHangmanGame {
 
     public int getNumberOfGuesses() {
         return this.numberOfGuesses;
+    }
+
+    public String getAFinalWord() {
+        return myEvilSetOfWords.iterator().next().toString();
     }
 }
